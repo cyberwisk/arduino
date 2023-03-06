@@ -1,0 +1,21 @@
+HMC5883L 3-axis digital magnetometer
+BMP085 digital pressure sensor
+MPU6050 6 axis gyro/accelerometer with Motion Processing Unit
+
+
+The Multiwii SE V2.0 is a gyro/accelerometer based flight controller that is loaded with features. With expandability options and full programmability, this device can control just about any type of aircraft. This is the ideal flight controller for your multi-rotor aircraft.
+
+Features:
+ • Small size, 35x35mm mounting holes
+ • 6 input channels for standard receiver and PPM SUM receiver
+ • Up to 8-axis motor output
+ • 2 servos output for PITCH and ROLL gimbal system
+ • Can utilize a servo output to trigger a camera button
+ • FTDI/UART TTL socket for debug, upload firmware or LCD display
+ • I2C socket for extend sensor, I2C LCD/OLED display or CRIUS I2c-GPS NAV board
+ • Separate 3.3V and 5V LDO voltage regulator
+ • ATMega 328P Microcontroller
+ • MPU6050 6 axis gyro/accelerometer with Motion Processing Unit
+ • HMC5883L 3-axis digital magnetometer
+ • BMP085 digital pressure sensor
+ • On board logic level converter

